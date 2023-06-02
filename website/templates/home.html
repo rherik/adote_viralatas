@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Adote um vira-lata{% endblock%}
+{% block base %}
+    <body>
+        <main>
+            <div class="offset-3 container-md">
+                <div class="container-fluid">
+                    <h2 class="text-lg-left">Logo abaixo vemos uma imagem da <br>cachorra mais linda do mundo!</h2>
+                </div>
+                <img class="col-4 img-fluid rounded" src="{{ url_for('static', filename='imagens/p4.png') }}" alt="Cachorra viralata preta sorridente.">
+            </div>
+            <div class="offset-3 container" id="link-insta">
+                <div class="col-2">
+                    <a href="https://www.instagram.com/pretinha_petitica/">
+                    <button type="button" id="cor_button" class="btn btn-outline-link">
+                        Siga no instagram</button>
+                    </a>
+                </div>
+            </div>
+        </main>
+        {% block footer %}
+        {% endblock %}
+    </body>
+{% endblock %}

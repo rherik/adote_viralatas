@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}História{% endblock %}
+{% block base %}
+    <section>
+        <div class="offset-3 container">
+            <div class="row">
+                <h2 class="col-12">Timeline:</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-lg-left">
+                        Ela foi resgatada da rua no dia 24/12/2020.<br>
+                        Apareceu aqui em casa com alguns machudados<br>
+                        mas sempre foi muito carinhosa.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <h5 class="col-12">Aqui está a primeira foto que fiz com ela:</h5>
+            <br>
+            <img class="col-sm-6 col-md-6 col-lg-6 rounded" src="{{ url_for('static', filename='imagens/p12.png') }}" alt='Foto do primeiro dia com ela.'>
+        </div>
+    </section>
+
+    {% block footer %}
+    {% endblock %}
+{% endblock %}
